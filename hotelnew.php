@@ -1,5 +1,4 @@
-
-    <head>
+<head>
 <!DOCTYPE html>
 <html lang="en">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
@@ -55,7 +54,7 @@ form {
 /* CUSTOMIZE THE JUMBOTRON
 -------------------------------------------------- */
 .jumbotron {
-  background-image:url("http://img1.10bestmedia.com/Images/Photos/299056/Charleston-Harbor-Resort-and-Marina1_54_990x660.jpg");
+  background-image:url("http://i0.bookcdn.com/data/Photos/OriginalPhoto/1555/155556/155556044/Castello-Beach-Hotel-photos-Exterior.JPEG");
   height: 400px;
 background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -139,7 +138,7 @@ background-size: 100% 100%;
   line-height: 1;
   letter-spacing: -1px;
             color: Black;
-            text-shadow: 3px 3px gray;
+            text-shadow: 3px 3px white;
 }
 
 
@@ -248,14 +247,14 @@ background-size: 100% 100%;
 <!-- Double -->
 <div class="row">
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://placehold.it/140x140">
+      <img class="img-circle" src="http://thecentralhotelharrisburg.com/wp-content/uploads/2014/04/deluxe-double-queen-guest-room-central-hotel-harrisburg-pa-8278_HDR-150x150.jpg">
       <h2>Double</h2>
       <p>Our most economical room.</p>
    
       
             <div class="mod">
   <!-- Trigger the modal with a button -->
-  <p><a<button type="button" class="btn btn btn-default" data-toggle="modal" data-target="#mary">Reserve
+  <p><a<button type="button" class="btn btn btn-default" data-toggle="modal" data-target="#mary">Reserve 
 
   <!-- Modal -->
   <div class="modal fade" id="mary" role="dialog">
@@ -270,7 +269,7 @@ background-size: 100% 100%;
 </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Continue</button>
         </div>
       </div>
     </div>
@@ -283,7 +282,7 @@ background-size: 100% 100%;
 <!-- KING -->      
     </div>
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://placehold.it/140x140">
+      <img class="img-circle" src="http://www.brycecanyongrand.com/wp-content/uploads/2014/12/hotel-room-in-bryce-canyon-150x150.jpg">
       <h2>King</h2>
       <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
  
@@ -304,7 +303,7 @@ background-size: 100% 100%;
 </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=5)0'); return false;">Continue</button>
         </div>
       </div>
     </div>
@@ -316,7 +315,7 @@ background-size: 100% 100%;
   
 <!-- SUIT -->
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://placehold.it/140x140">
+      <img class="img-circle" src="http://www.edenresort.com/wp-content/uploads/2014/04/Eden-Resort-Lancaster-PA-Hotel-Two-Room-King-Suite-P0000056-150x150.jpg">
       <h2>Suite</h2>
       <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
       
@@ -338,7 +337,7 @@ background-size: 100% 100%;
 </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;">Continue</button>
         </div>
       </div>
     </div>

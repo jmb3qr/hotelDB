@@ -220,7 +220,7 @@ form {
       <img src="http://www.renaissanceasheville.com/images/masthead/biltmore-estate.jpg" style="width:100%" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Bootstrap 3 Carousel Layout</h1>
+          <h1>Biltmore Hotels</h1>
           <p></p>
           <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
         </p>
