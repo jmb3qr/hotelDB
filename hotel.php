@@ -266,14 +266,15 @@ form {
     <br>
     
     
-    <form>
-  Start date: <input class="form-group" type="text" name="startdate" placeholder="01/01/2016">
-  End date: <input class="form-group" type="text" name="lastname" placeholder="01/03/2016">
-  Room Type: <select class="form-group" name="type">
+    <form action="MakeReservation.php" method="post">
+  Start date: <input type="text" name="startdate" placeholder="01/01/2016">
+  End date: <input type="text" name="enddate" placeholder="01/03/2016">
+  Room Type: <select class="form-group" name="Type">
   <option value="double">Double</option>
   <option value="king">King</option>
   <option value="suite">Suite</option>
-        </select>      
+        </select>  
+        <input type="Submit">
 </form>
     
     
