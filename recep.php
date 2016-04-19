@@ -1,4 +1,4 @@
-  
+ 
     <head>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +23,6 @@
 
 
 
-
-
-
         <!-- CSS code from Bootply.com editor -->
         
         <style type="text/css">
@@ -42,15 +39,6 @@ form {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
 
 
 
@@ -146,15 +134,6 @@ form {
     padding-right: 0;
   }
 
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-  }
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
 
   /* Bump up size of carousel content */
   .carousel-caption p {
@@ -162,7 +141,47 @@ form {
     font-size: 21px;
     line-height: 1.4;
   }
+   
+ div.container {
+    width: 30em;
+    border: .5em solid;
+     margin: 0 auto;
+}           
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-boxborder-box;
+}
 
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+            
+button {
+    border-radius: 8px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}          
+            
 }
 
         </style>
@@ -171,29 +190,16 @@ form {
     </head>
 
 <body>
-   
-<div class="navbar-wrapper">
-  <div class="container">
-    <div class="navbar navbar-inverse navbar-static-top">
-      
-        <div class="navbar-header">
-	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </a>
-        <a class="navbar-brand" href="http://plato.cs.virginia.edu/~jmb3qr/hotelHome">Biltmore Hotel</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="http://plato.cs.virginia.edu/~jmb3qr/employeelogin" target="ext">Employee</a></li>
-            <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelHome#Contact" >Contact Us</a></li>
-          </ul>
-        </div>
 
-    </div>
-  </div><!-- /container -->
-</div><!-- /navbar wrapper -->
+
+  
+  
+
+</style>
+
+<body>
+
+  
 
 
 <!-- Carousel
@@ -216,73 +222,47 @@ form {
 </div>
 <!-- /.carousel -->
 
+  <div class="container">
+<div>
+  
+  <form action="action_page.php">
+
+<label for="country">What do you want to see?</label>
+    <select id="country" name="country">
+      <option value="australia">Reservations</option>
+      <option value="canada">Guest</option>
+      <option value="usa">Employee Shifts</option>
+    </select>  
+   <center> <button><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/recep">Submit </a></button></center>
+    
+  </form>
+</div>
+  </div>
+  <br>
+  <div class="container">
+<div>
+  
+<h3>Search substring of Last Name</h3>	
+           
+	<input class="xlarge" id="LastNinput" type="search" size="30" placeholder="Last Name Contains"/>
+
+	<div id="LastNresult">Search Result</div>
+
+	<br/><br/>
+	index.html - View the source here to see the HTML<BR>
+	dbutil.php - <a href="./dbutil.php.txt">Code</a><BR>
+	ex01searchPersons.php - <a href="./ex01searchPersons.php.txt">Code</a><BR>
+
+</div>
+  </div>
 
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-
-<div class="container marketing">
-
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://www.hummerlimoride.com/images/charleston-south-carolina-the-battery.jpg">
-      <h2>Beach Palms</h2>
-      <p>Charelston, South Carolina</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="https://www.hammondtownsend.com/assets/images/general/monticello.jpg">
-      <h2>Casino Royal</h2>
-      <p>Charlottesville, Virginia</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://www.keeganwerlin.com/wp-content/uploads/2014/09/Boston1.jpg">
-      <h2>Three Palms</h2>
-      <p>Boston, Massachusets</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
-    </div>
-  </div><!-- /.row -->
   
-  <p></p>
-   <p></p>
-  
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="https://www.fun-things-texas.com/funthingstexas/wp-content/uploads/dal-hyatt-regency-downtown.jpg">
-      <h2>CourtYard</h2>
-      <p>Dallas, Texas</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://resizer.otstatic.com/v1/fDzI465IL8%2B687zSupRS4Q/23683442.jpg">
-      <h2>Sleep Inn</h2>
-      <p>Seattle, Washington</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="https://s-media-cache-ak0.pinimg.com/736x/0c/fa/7c/0cfa7c916fd69bf14fceeb81918fedbc.jpg">
-      <h2>Hartford House</h2>
-      <p>Fairfield Conneticut</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
-    </div>
-  </div><!-- /.row -->
-
 
   
   <hr class="featurette-divider">
 
-  <!-- FOOTER -->
-    <a id="Contact"></a>
-  <footer>
-    <h3><center>Contact Us</center></h3>
-    
-  <p><center>Biltmore Hotels	</p>
-    <p>Nashville, NC 32456 </p>
-    <p><u> 1-800-345-9078</u></p>
-  </center>
- 
-  </footer>
 
 </div><!-- /.container -->

@@ -54,7 +54,8 @@ form {
 /* CUSTOMIZE THE JUMBOTRON
 -------------------------------------------------- */
 .jumbotron {
-  background-image:url("http://i0.bookcdn.com/data/Photos/OriginalPhoto/1555/155556/155556044/Castello-Beach-Hotel-photos-Exterior.JPEG");
+  background-image:url("http://www.cinnamonair.com/wp-content/uploads/2012/10/gal_koggala_beach.jpg");
+            /*900 by 400*/
   height: 400px;
 background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -190,24 +191,23 @@ background-size: 100% 100%;
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </a>
-        <a class="navbar-brand" href="#">Biltmore Hotels</a>
+        <a class="navbar-brand" href="http://plato.cs.virginia.edu/~jmb3qr/hotelHome">Biltmore Hotels</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://www.bootply.com" target="ext">Employee</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="http://plato.cs.virginia.edu/~jmb3qr/employeelogin" target="ext">Employee</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Charleston</a></li>
+                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Charlotesville</a></li>
+                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Boston</a></li>
+                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Dallas</a></li>
+                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Seattle</a></li>
+                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Fairfield</a></li>
               </ul>
             </li>
+              <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew#Contact" >Contact Us</a></li>
           </ul>
         </div>
 
@@ -249,67 +249,23 @@ background-size: 100% 100%;
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://thecentralhotelharrisburg.com/wp-content/uploads/2014/04/deluxe-double-queen-guest-room-central-hotel-harrisburg-pa-8278_HDR-150x150.jpg">
       <h2>Double</h2>
-      <p>Our most economical room.</p>
+      <p>Our most economical room. This is the best place if you are traveling with kids</p>
    
-      
-            <div class="mod">
-  <!-- Trigger the modal with a button -->
-  <p><a<button type="button" class="btn btn btn-default" data-toggle="modal" data-target="#mary">Reserve 
+    <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
 
-  <!-- Modal -->
-  <div class="modal fade" id="mary" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-      
-        <div class="modal-body">
-          <form action="MakeReservation.php" method="post">
-            <p>Start date: <input type="text" name="startdate" placeholder="01/01/2016"></p>
-            <p> End date: <input type="text" name="enddate" placeholder="01/03/2016"> </p>
-      
-</form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Continue</button>
-        </div>
-      </div>
-    </div>
   </div>
-</div>  
-              </a></p>
+
       
       
       
 <!-- KING -->      
-    </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://www.brycecanyongrand.com/wp-content/uploads/2014/12/hotel-room-in-bryce-canyon-150x150.jpg">
       <h2>King</h2>
       <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
  
-            <div class="mod">
-  <!-- Trigger the modal with a button -->
-  <p><a<button type="button" class="btn btn btn-default" data-toggle="modal" data-target="#mary">Reserve 
-
-  <!-- Modal -->
-  <div class="modal fade" id="mary" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-      
-        <div class="modal-body">
-          <form action="MakeReservation.php" method="post">
-            <p>Start date: <input type="text" name="startdate" placeholder="01/01/2016"></p>
-            <p> End date: <input type="text" name="enddate" placeholder="01/03/2016"> </p>
-
-</form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=5)0'); return false;">Continue</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>  
-              </a></p>  
+      <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
+            
     </div>
   
   
@@ -319,38 +275,23 @@ background-size: 100% 100%;
       <h2>Suite</h2>
       <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
       
-      
-            <div class="mod">
-  <!-- Trigger the modal with a button -->
-  <p><a<button type="button" class="btn btn btn-default" data-toggle="modal" data-target="#mary">Reserve 
-
-  <!-- Modal -->
-  <div class="modal fade" id="mary" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-      
-        <div class="modal-body">
-          <form action="MakeReservation.php" method="post">
-            <p>Start date: <input type="text" name="startdate" placeholder="01/01/2016"></p>
-            <p> End date: <input type="text" name="enddate" placeholder="01/03/2016"> </p>
-      
-</form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;">Continue</button>
-        </div>
-      </div>
+<p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>      
+           
     </div>
   </div>
-</div>  
-              </a></p>
-    </div>
-  </div>
-
+  
+  <a id="Contact"></a>
+   <br>
+  <br>
   <hr class="featurette-divider">
 
   <!-- /END THE FEATURETTES -->
-<h1>Contact Us</h1>
+
+     
+      <br>
+    <a id="Contact"></a>
+  <footer>
+    <h3><center>Contact Us</center></h3>
    
     
     
