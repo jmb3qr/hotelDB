@@ -191,23 +191,23 @@ background-size: 100% 100%;
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </a>
-        <a class="navbar-brand" href="http://plato.cs.virginia.edu/~jmb3qr/hotelHome">Biltmore Hotels</a>
+        <a class="navbar-brand" href="hotelHome.php">Biltmore Hotels</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://plato.cs.virginia.edu/~jmb3qr/employeelogin" target="ext">Employee</a></li>
+            <li><a href="employeelogin.php" target="ext">Employee</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Charleston</a></li>
-                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Charlotesville</a></li>
-                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Boston</a></li>
-                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Dallas</a></li>
-                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Seattle</a></li>
-                <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">Fairfield</a></li>
+                <li><a href="hotelnew.php">Charleston</a></li>
+                <li><a href="hotelnew.php">Charlotesville</a></li>
+                <li><a href="hotelnew.php">Boston</a></li>
+                <li><a href="hotelnew.php">Dallas</a></li>
+                <li><a href="hotelnew.php">Seattle</a></li>
+                <li><a href="hotelnew.php">Fairfield</a></li>
               </ul>
             </li>
-              <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew#Contact" >Contact Us</a></li>
+              <li><a href="hotelnew.php#Contact" >Contact Us</a></li>
           </ul>
         </div>
 
@@ -251,7 +251,7 @@ background-size: 100% 100%;
       <h2>Double</h2>
       <p>Our most economical room. This is the best place if you are traveling with kids</p>
    
-    <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
+    <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
 
   </div>
 
@@ -264,7 +264,7 @@ background-size: 100% 100%;
       <h2>King</h2>
       <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
  
-      <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
+      <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
             
     </div>
   
@@ -275,7 +275,7 @@ background-size: 100% 100%;
       <h2>Suite</h2>
       <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
       
-<p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('http://plato.cs.virginia.edu/~jmb3qr/costumlogin', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>      
+<p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>      
            
     </div>
   </div>

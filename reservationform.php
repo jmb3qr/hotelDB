@@ -45,30 +45,27 @@ div {
 <body>
 
 <div>
-  <form action="MakeGuest.php" method=POST>
+  <form action="MakeReservation.php" method=POST>
     
     <label for="email">Email</label><br>
     <input type="text" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
       <br>
     
-   <!-- If statment, if eamil exists done, else add more info-->
     
-    
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" required pattern="[A-Za-z]+">
+    <label for="startdate">Start Date</label>
+    <input type="text" id="startdate" name="startdate" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" required pattern="[A-Za-z]+">
-
-      <label for="phone">Phone Number</label>
-    <input type="text" id="phone" name="phonenumber" placeholder="757-276-9803" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-    
-    <label for="dob">Date of Birth</label>
-    <input type="text" id="dob" name="dob" placeholder="04/06/1987" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d">
+    <label for="enddate">EndDate</label>
+    <input type="text" id="enddate" name="enddate" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d">
    
-  
+    <label for="type">Room Type</label>
+      <select id="type" name="type">
+      <option value="double">Double</option>
+      <option value="King">King</option>
+      <option value="Suite">Suite</option>
+    </select>
 
-   <center><input type=submit name=submit></center>
+   <center><input type="submit" name=submit></center>
     
 
     
@@ -77,4 +74,3 @@ div {
 
 </body>
 </html>
-

@@ -182,12 +182,12 @@ form {
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </a>
-        <a class="navbar-brand" href="http://plato.cs.virginia.edu/~jmb3qr/hotelHome">Biltmore Hotel</a>
+        <a class="navbar-brand" href="hotelHome.php">Biltmore Hotel</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://plato.cs.virginia.edu/~jmb3qr/employeelogin" target="ext">Employee</a></li>
-            <li><a href="http://plato.cs.virginia.edu/~jmb3qr/hotelHome#Contact" >Contact Us</a></li>
+            <li><a href="employeelogin.php" target="ext">Employee</a></li>
+            <li><a href="hotelHome.php#Contact" >Contact Us</a></li>
           </ul>
         </div>
 
@@ -229,19 +229,19 @@ form {
       <img class="img-circle" src="http://www.hummerlimoride.com/images/charleston-south-carolina-the-battery.jpg">
       <h2>Beach Palms</h2>
       <p>Charelston, South Carolina</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
+      <p><a class="btn btn-default" href="hotelnew.php">View details </a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="https://www.hammondtownsend.com/assets/images/general/monticello.jpg">
       <h2>Casino Royal</h2>
       <p>Charlottesville, Virginia</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
+      <p><a class="btn btn-default" href="hotelnew.php">View details </a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://www.keeganwerlin.com/wp-content/uploads/2014/09/Boston1.jpg">
       <h2>Three Palms</h2>
       <p>Boston, Massachusets</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
+      <p><a class="btn btn-default" href="hotelnew.php">View details </a></p>
     </div>
   </div><!-- /.row -->
   
@@ -253,19 +253,19 @@ form {
       <img class="img-circle" src="https://www.fun-things-texas.com/funthingstexas/wp-content/uploads/dal-hyatt-regency-downtown.jpg">
       <h2>CourtYard</h2>
       <p>Dallas, Texas</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
+      <p><a class="btn btn-default" href="hotelnew.php">View details </a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://resizer.otstatic.com/v1/fDzI465IL8%2B687zSupRS4Q/23683442.jpg">
       <h2>Sleep Inn</h2>
       <p>Seattle, Washington</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
+      <p><a class="btn btn-default" href="hotelnew.php">View details </a></p>
     </div>
     <div class="col-md-4 text-center">
       <img class="img-circle" src="https://s-media-cache-ak0.pinimg.com/736x/0c/fa/7c/0cfa7c916fd69bf14fceeb81918fedbc.jpg">
       <h2>Hartford House</h2>
       <p>Fairfield Conneticut</p>
-      <p><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/hotelnew">View details </a></p>
+      <p><a class="btn btn-default" href="hotelnew.php">View details </a></p>
     </div>
   </div><!-- /.row -->
 
