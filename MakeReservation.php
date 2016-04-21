@@ -10,7 +10,7 @@
 $Email = $_POST['email'];
 $Start = $_POST['startdate'];
 $End = $_POST['enddate'];
-$Type = $_POST['type'];
+//$Type = $_POST['type'];
 
 
  // Form the SQL query (an INSERT query)

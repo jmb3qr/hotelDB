@@ -1,6 +1,14 @@
+    <?php
+session_start();
+
+if(!isset($_SESSION["login"])){
+$_SESSION["error"] = "You have not logged in. Please log in first";
+    echo('You are not logged in'); 
+    header("Location: employeelogin.php");
+}
+?>
  
     <head>
-<!DOCTYPE html>
 <html lang="en">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
@@ -184,6 +192,9 @@ button {
             
 }
 
+            
+            
+
         </style>
     </head>
         </style>
@@ -198,12 +209,12 @@ button {
 </style>
 
 <body>
-
+    
+    
   
 
 
-<!-- Carousel
-================================================== -->
+<!-- Carousel -->
 <div id="myCarousel" class="carousel slide">
   <!-- Indicators -->
   <div class="carousel-inner">
@@ -266,3 +277,4 @@ button {
 
 
 </div><!-- /.container -->
+    

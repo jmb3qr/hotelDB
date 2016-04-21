@@ -195,7 +195,7 @@ background-size: 100% 100%;
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="employeelogin.php" target="ext">Employee</a></li>
+            <li><a href="employeelogin.php">Employee</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <b class="caret"></b></a>
               <ul class="dropdown-menu">

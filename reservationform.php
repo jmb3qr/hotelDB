@@ -57,6 +57,7 @@ div {
 
     <label for="enddate">EndDate</label>
     <input type="text" id="enddate" name="enddate" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d">
+<!--
    
     <label for="type">Room Type</label>
       <select id="type" name="type">
@@ -64,6 +65,7 @@ div {
       <option value="King">King</option>
       <option value="Suite">Suite</option>
     </select>
+-->
 
    <center><input type="submit" name=submit></center>
     

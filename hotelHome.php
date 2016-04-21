@@ -186,7 +186,7 @@ form {
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="employeelogin.php" target="ext">Employee</a></li>
+            <li><a href="employeelogin.php" >Employee</a></li>
             <li><a href="hotelHome.php#Contact" >Contact Us</a></li>
           </ul>
         </div>

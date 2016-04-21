@@ -56,18 +56,18 @@ div {
 <div class="container">
 <div>
   
-  <form action="action_page.php">
+  <form action="login_action.php" method="POST">
 
-     <label for="fname" >Email</label>
-    <input type="text"  id="fname" name="email">
+     <label for="email" >Email</label>
+    <input type="text"  id="email" name="email">
     
    <!-- If statment, if eamil exists done, else add more info-->
     
     <label for="password" >Password</label>
-    <input type="text" id="Password" name="Password">   
+    <input type="text" id="password" name="password">   
    
 
-   <center> <button><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/recep">Submit </a></button></center>
+   <center><button><input type="submit" value="submit"></button></center>
     
 
     
