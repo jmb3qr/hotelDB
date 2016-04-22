@@ -15,14 +15,17 @@ $sessionPassword = $_POST['password'];
  }
 $Email = $_POST['email'];
 $Password = $_POST['password'];
-
-$Email = $con->real_escape_string($Email);
-$Password = $con->real_escape_string($Password);
+ 
     
-$login = mysqli_query($con, "SELECT * FROM Employee WHERE Email ='$Email' AND Last_Name='$Password'");
-$row = mysqli_fetch_array($login);
+//$login = mysqli_query($con, "SELECT * FROM Employee WHERE Email = ? AND Password= ? ");
+//$row = mysqli_fetch_array($login);
+$stmt = $con->prepare("SELECT * FROM Employee WHERE Email = ? AND Password= ? ");
+$stmt->bind_param('ss', $Email, $Password);
+$stmt->execute();
+$result = $stmt->get_result();
 
-if($row == true){
+$row = $result->fetch_assoc();   
+if($row){
     
     $_SESSION["login"]= "true";
     

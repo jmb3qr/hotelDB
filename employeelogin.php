@@ -67,7 +67,7 @@ div {
     <input type="text" id="password" name="password">   
    
 
-   <center><button><input type="submit" value="submit"></button></center>
+   <center><input type="submit" value="submit"></center>
     
 
     

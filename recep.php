@@ -45,9 +45,32 @@ form {
   text-align: center;
 }
 
-/* CUSTOMIZE THE NAVBAR
+/* Tables CSS
 -------------------------------------------------- */
-
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -236,34 +259,84 @@ button {
   <div class="container">
 <div>
   
-  <form action="action_page.php">
-
-<label for="country">What do you want to see?</label>
-    <select id="country" name="country">
-      <option value="australia">Reservations</option>
-      <option value="canada">Guest</option>
-      <option value="usa">Employee Shifts</option>
+<!--  <form action="#">-->
+<form>
+<label for="option">What do you want to see?</label>
+    <select id="option" name="option">
+      <option value="reservation">Reservations</option>
+      <option value="guest">Guest</option>
+      <option value="employee">Employee Info</option>
     </select>  
-   <center> <button><a class="btn btn-default" href="http://plato.cs.virginia.edu/~jmb3qr/recep">Submit </a></button></center>
-    
-  </form>
+</form>
 </div>
   </div>
   <br>
-  <div class="container">
+<center><div id="tableresult"></div></center>
+    
+<div class="container">
 <div>
   
-<h3>Search substring of Last Name</h3>	
+  <form action="action_page.php">
+    
+<label for="country">Choose Information to Export</label>
+    <select onChange="window.location.href=this.value">
+      <option value="Download_Guest.php">Guest</option>
+      <option value="Download_Bills.php">Bills</option>
+      <option value="Download_Employee.php">Employee</option>
+    </select> 
+
+  </form>
+</div>
+  </div>
+    <br>
+  <div class="container">
+<div>
+    
+  <head>
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script> 
+	<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+ 	<title>AJAX Persons Example</title>
+	<script>
+	$(document).ready(function() {
+		$( "#option" ).change(function() {
+		
+			$.ajax({
+				url: 'employeeaction.php', 
+				data: {whichtable: $( "#option" ).val()},
+				success: function(data){
+					$('#tableresult').html(data);	
+				
+				}
+			});
+		});
+		
+	});
+	</script>
+      <script>
+	$(document).ready(function() {
+		$( "#Ninput" ).change(function() {
+		
+			$.ajax({
+				url: 'employeesearch.php', 
+				data: {GuestName: $( "#Ninput" ).val()},
+				success: function(data){
+					$('#searchresult').html(data);	
+				
+				}
+			});
+		});
+		
+	});
+	</script>
+</head>
+
+<h3>Search for Guests and Reservations</h3>	
            
-	<input class="xlarge" id="LastNinput" type="search" size="30" placeholder="Last Name Contains"/>
+	<input class="xlarge" id="Ninput" type="search" size="30" placeholder="Search Name, Email or Date"/>
 
-	<div id="LastNresult">Search Result</div>
-
-	<br/><br/>
-	index.html - View the source here to see the HTML<BR>
-	dbutil.php - <a href="./dbutil.php.txt">Code</a><BR>
-	ex01searchPersons.php - <a href="./ex01searchPersons.php.txt">Code</a><BR>
-
+<br>
+    <p></p>
+    <br>
 </div>
   </div>
 
@@ -271,7 +344,7 @@ button {
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
   
-
+<center><div id="searchresult"></div></center>
   
   <hr class="featurette-divider">
 
