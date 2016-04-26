@@ -12,7 +12,7 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
 <html lang="en">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Bootply snippet - Bootply Bootstrap Preview</title>
+        <title>Employee</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="" />
@@ -215,6 +215,10 @@ button {
             
 }
 
+p {
+    text-indent: 15em;
+}
+
             
             
 
@@ -256,39 +260,10 @@ button {
 </div>
 <!-- /.carousel -->
 
-  <div class="container">
-<div>
-  
-<!--  <form action="#">-->
-<form>
-<label for="option">What do you want to see?</label>
-    <select id="option" name="option">
-      <option value="reservation">Reservations</option>
-      <option value="guest">Guest</option>
-      <option value="employee">Employee Info</option>
-    </select>  
-</form>
-</div>
-  </div>
-  <br>
-<center><div id="tableresult"></div></center>
-    
-<div class="container">
-<div>
-  
-  <form action="action_page.php">
-    
-<label for="country">Choose Information to Export</label>
-    <select onChange="window.location.href=this.value">
-      <option value="Download_Guest.php">Guest</option>
-      <option value="Download_Bills.php">Bills</option>
-      <option value="Download_Employee.php">Employee</option>
-    </select> 
+<p><a href="javascript:window.location.href=window.location.href">Clear Search</a></p>
 
-  </form>
-</div>
-  </div>
-    <br>
+     <div class="row">
+    <div class="col-md-4 text-center">
   <div class="container">
 <div>
     
@@ -328,26 +303,197 @@ button {
 		
 	});
 	</script>
+      <script>
+	$(document).ready(function() {
+		$( "#rooms" ).change(function() {
+		
+			$.ajax({
+				url: 'employeerooms.php', 
+				data: {Hotel: $( "#rooms" ).val()},
+				success: function(data){
+					$('#roomresult').html(data);	
+				
+				}
+			});
+		});
+		
+	});
+	</script>
+      <script>
+	$(document).ready(function() {
+		$( "#Naminput" ).change(function() {
+		
+			$.ajax({
+				url: 'employeesearchname.php', 
+				data: {Guest: $( "#Naminput" ).val()},
+				success: function(data){
+					$('#guestresult').html(data);	
+				
+				}
+			});
+		});
+		
+	});
+	</script>
+      <script>
+	$(document).ready(function() {
+		$( "#billinput" ).change(function() {
+		
+			$.ajax({
+				url: 'billsearch.php', 
+				data: {Guest: $( "#billinput" ).val()},
+				success: function(data){
+					$('#billresult').html(data);	
+				
+				}
+			});
+		});
+		
+	});
+	</script>
 </head>
-
-<h3>Search for Guests and Reservations</h3>	
+<center><label>Search for Guests, Bills, and Reservations</label></center>	
+    <br>
            
-	<input class="xlarge" id="Ninput" type="search" size="30" placeholder="Search Name, Email or Date"/>
+	<center><input class="xlarge" id="Ninput" type="search" size="30" placeholder="Search Name, Email or Date"/></center>
+    <center><input class="xlarge" id="Naminput" type="search" size="30" placeholder="Search Name or Email"/></center>
+    <center><input class="xlarge" id="billinput" type="search" size="30" placeholder="Search Bill No. or Name"/></center>
 
-<br>
-    <p></p>
+
+    
+    
     <br>
 </div>
   </div>
+    
 
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
   
 <center><div id="searchresult"></div></center>
+    <center><div id="guestresult"></div></center>
+        <center><div id="billresult"></div></center><br>
+        </div>   
+       
+    <div class="col-md-4 text-center">
+      <div class="container">
+<div>
   
+<form>
+<label for="rooms">View Rooms</label>
+    <select id="rooms" name="rooms">
+      <option value="beach">Beach Palms</option>
+      <option value="casino">Casino Royale</option>
+      <option value="palms">Three Palms</option>
+        <option value="court">CourtYard</option>
+        <option value="sleep">Sleep Inn</option>
+        <option value="house">Hartford House</option>
+    </select>  
+</form>
+</div>
+  </div>
+    <center><div id="roomresult"></div></center><br>
+        
+        </div>
+        
+        
+        
+    <div class="col-md-4 text-center">
+<div class="container">
+<div>
+  
+  <form action="action_page.php">
+    
+<label for="country">Choose Information to Export</label>
+    <select onChange="window.location.href=this.value">
+      <option value="Download_Guest.php">Guest</option>
+      <option value="Download_Bills.php">Bills</option>
+      <option value="Download_Employee.php">Employee</option>
+    </select> 
+
+  </form>
+</div>
+  </div>
+        </div>
+    </div>
+        
+    <br>
+    
+
+ <div class="row">
+    <div class="col-md-4 text-center">
+  <div class="container">
+<div>
+  
+<!--  <form action="#">-->
+<form action="updatereservation.php" method="post" >
+    <label for="updateres">Update Reservation</label><br><br>
+    <input type="number" id="Rid" name="Rid" placeholder="Enter Reservation ID">
+    <input type="number" id="newroom" name="newroom" placeholder="Enter New Room">
+    <input type="submit" name="submit">
+</form>
+</div>
+  </div>
+
+        </div>
+               
+
+       <div class="col-md-4 text-center">
+    <div class="container">
+<div>
+  
+  <form action="updateroom.php" method="post" >
+    
+<label for="update">Check In/Out Room</label><br><br>
+    <input type="number" id="Hid" name="Hid" placeholder="Enter Hotel ID">
+    <input type="number" id="room" name="room" placeholder="Enter Room Number">
+    <input type="submit" name="submit">
+
+  </form>
+</div>
+  </div>
+        </div>
+        
+    <div class="col-md-4 text-center">
+<div class="container">
+<div>
+  
+  <form action="deletereservation.php" method="post" onsubmit="return confirm('Are you sure you want to delete this Reservation?');">
+    
+<label for="country">Delete Reservation</label><br><br>
+    <input type="number" id="Rid" name="Rid" placeholder="Enter Reservation ID">
+    <input type="submit" name="submit">
+
+  </form>
+</div>
+  </div><br>
+        </div>
+     <div class="col-md-4 text-center">
+    <div class="container">
+<div>
+  
+  <form>
+<label for="option">Employees, Guests, Reservations</label>
+    <select id="option" name="option">
+      <option value="reservation">Reservations</option>
+        <option value="bills">Bills</option>
+      <option value="guest">Guest</option>
+      <option value="employee">Employee Info</option>
+    </select>  
+</form>
+</div>
+  </div>
+        </div>
+
+     <center><div id="tableresult"></div></center><br>
+        
+        
+      
+  
+    
   <hr class="featurette-divider">
 
-
+    </div>
 </div><!-- /.container -->
     

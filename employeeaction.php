@@ -18,7 +18,8 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
 
         $view = '%' . $_GET['whichtable'] . '%';
         if($view=="%reservation%"){
-            $sql="select * from Reservation natural join MAKES natural join Guest natural join ASSIGNED natural join Rooms natural join Hotel";
+//            $sql="select * from Reservation natural join MAKES natural join Guest natural join ASSIGNED natural join Rooms natural join Hotel ORDER BY Reservation_ID";
+            $sql="select * from DisplayReservation";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Reservations</h3>";
             echo "<table class=gridtable border=1><th>ID</th><th>Last Name</th><th>First Name</th><th>Room</th><th>Check-in</th><th>Check-out</th><th>Location</th>\n";
@@ -64,6 +65,22 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
                 $email = $row['Email'];
                 $phone = $row['Phone_Number'];
                 echo "<tr><td>$lname</td><td>$fname</td><td>$phone</td><td>$email</td></tr>";
+            
+
+        }
+            echo "</table>";
+        }
+        if($view=="%bills%"){
+            $sql="select * from DisplayBill";
+            $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
+            echo"<h3>Bills</h3>";
+            echo "<table class=gridtable border=1><th>Bill No</th><th>Last Name</th><th>First Name</th><th>Amount</th>\n";
+            while($row = $result->fetch_assoc()){
+                $lname = $row['Last_Name'];
+                $fname = $row['First_Name'];
+                $billno = $row['Bill_ID'];
+                $amt = $row['Total'];
+                echo "<tr><td>$billno</td><td>$lname</td><td>$fname</td><td>$amt</td></tr>";
             
 
         }

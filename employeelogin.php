@@ -16,6 +16,15 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-boxborder-box;
 }
+    input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-boxborder-box;
+}
 
 input[type=submit] {
     width: 100%;
@@ -58,13 +67,13 @@ div {
   
   <form action="login_action.php" method="POST">
 
-     <label for="email" >Email</label>
-    <input type="text"  id="email" name="email">
+     <label for="username" >Username</label>
+    <input type="text"  id="username" name="username">
     
    <!-- If statment, if eamil exists done, else add more info-->
     
     <label for="password" >Password</label>
-    <input type="text" id="password" name="password">   
+    <input type="password" id="password" name="password">   
    
 
    <center><input type="submit" value="submit"></center>

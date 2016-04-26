@@ -8,7 +8,7 @@ header('Content-Disposition: attachment; filename=data.csv');
 $output = fopen('php://output', 'w');
 
 // output the column headings
-fputcsv($output, array('Employee_ID', 'First_Name', 'Last_Name', 'Email', 'Password', 'Phone_Number', 'Age', 'Salary'));
+fputcsv($output, array('Employee_ID', 'First_Name', 'Last_Name', 'Email', 'Phone_Number', 'Age'));
 
 // fetch the data
 
@@ -21,7 +21,7 @@ mysqli_connect_error());
  return null; 
  } 
 
-$sql = "SELECT * FROM Employee";
+$sql = "SELECT * FROM ExportEmployee";
 $result=mysqli_query($con, $sql) or die('download ' . mysqli_error($con));
 
 //$rows = mysql_query('SELECT * FROM Reservation');

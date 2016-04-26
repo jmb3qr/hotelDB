@@ -3,7 +3,7 @@
 <html lang="en">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Bootply snippet - Bootply Bootstrap Preview</title>
+        <title>Beach Palm Hotel</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="" />
@@ -136,6 +136,7 @@ background-size: 100% 100%;
 .featurette-heading {
   font-size: 100px;
   font-weight: 600;
+  font-family: Copperplate Gothic Light;
   line-height: 1;
   letter-spacing: -1px;
             color: Black;
@@ -181,7 +182,7 @@ background-size: 100% 100%;
     
     <body  >
         
-        <div class="navbar-wrapper">
+<div class="navbar-wrapper">
   <div class="container">
     <div class="navbar navbar-inverse navbar-static-top">
       
@@ -200,11 +201,11 @@ background-size: 100% 100%;
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="hotelnew.php">Charleston</a></li>
-                <li><a href="hotelnew.php">Charlotesville</a></li>
-                <li><a href="hotelnew.php">Boston</a></li>
-                <li><a href="hotelnew.php">Dallas</a></li>
-                <li><a href="hotelnew.php">Seattle</a></li>
-                <li><a href="hotelnew.php">Fairfield</a></li>
+                <li><a href="hotelnew2.php">Charlotesville</a></li>
+                <li><a href="hotelnew3.php">Boston</a></li>
+                <li><a href="hotelnew4.php">Dallas</a></li>
+                <li><a href="hotelnew5.php">Seattle</a></li>
+                <li><a href="hotelnew6.php">Fairfield</a></li>
               </ul>
             </li>
               <li><a href="hotelnew.php#Contact" >Contact Us</a></li>
@@ -247,9 +248,9 @@ background-size: 100% 100%;
 <!-- Double -->
 <div class="row">
     <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://thecentralhotelharrisburg.com/wp-content/uploads/2014/04/deluxe-double-queen-guest-room-central-hotel-harrisburg-pa-8278_HDR-150x150.jpg">
+      <img class="img-circle" src="https://s3.amazonaws.com/s3.imagefinder.co/uploads/2015/12/16034925/hiresstock-com-Hotel-Rooms-And-Hotel-Room-Amenities-22-150x150.jpg">
       <h2>Double</h2>
-      <p>Our most economical room. This is the best place if you are traveling with kids</p>
+      <p>Our most economical room. This is the best option if you are traveling with kids</p>
    
     <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
 
@@ -262,7 +263,7 @@ background-size: 100% 100%;
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://www.brycecanyongrand.com/wp-content/uploads/2014/12/hotel-room-in-bryce-canyon-150x150.jpg">
       <h2>King</h2>
-      <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
+      <p>A more luxurious room. King-size bed and a balcony.</p>
  
       <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
             
@@ -273,7 +274,7 @@ background-size: 100% 100%;
     <div class="col-md-4 text-center">
       <img class="img-circle" src="http://www.edenresort.com/wp-content/uploads/2014/04/Eden-Resort-Lancaster-PA-Hotel-Two-Room-King-Suite-P0000056-150x150.jpg">
       <h2>Suite</h2>
-      <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
+      <p>Our most romantic experience. Ideal for couples.</p>
       
 <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>      
            

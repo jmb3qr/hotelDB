@@ -45,10 +45,12 @@ div {
 <body>
 
 <div>
-    <center><h3>Have you signed up before?</h3></center>
-<p><a class="btn btn-default" href="reservationform.php">Yes</a></p>
-    <p><a class="btn btn-default" href="costumlogin.php">No</a></p>
+<center><h3>Have you signed up before?</h3></center>
+<center><button class="btn btn-default" onclick="window.location.href='http://plato.cs.virginia.edu/~kra4ck/reservationform.php'">Yes</button></center><br>
+<center><button class="btn btn-default" onclick="window.location.href='http://plato.cs.virginia.edu/~kra4ck/costumlogin.php'">No</button></center><br>
 </div>
+
+
 
 </body>
 </html>

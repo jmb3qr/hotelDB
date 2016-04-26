@@ -1,31 +1,31 @@
 <?php
 
 session_start();
-$sessionUsername = $_POST['email'];
+$sessionUsername = $_POST['username'];
 $sessionPassword = $_POST['password'];
+ini_set('display_errors', 1);
 
 
     define('Type', 'Type');  
  include_once("./library.php"); // To connect to the database
- $con = new mysqli($SERVER, $USERNAME, $PASSWORD, $DATABASE);
+ $logincon = new mysqli($SERVER, $LOGINUSER, $LOGINPASSWORD, $LOGINDATABASE);
  // Check connection
  if (mysqli_connect_errno())
  {
  echo "Failed to connect to MySQL: " . mysqli_connect_error();
  }
-$Email = $_POST['email'];
+
+$Username = $_POST['username'];
 $Password = $_POST['password'];
+$hashedpassword = hash("sha256",$Password);
  
     
-//$login = mysqli_query($con, "SELECT * FROM Employee WHERE Email = ? AND Password= ? ");
-//$row = mysqli_fetch_array($login);
-$stmt = $con->prepare("SELECT * FROM Employee WHERE Email = ? AND Password= ? ");
-$stmt->bind_param('ss', $Email, $Password);
+$stmt = $logincon->prepare("SELECT Username FROM EmployeeLogin WHERE Username = ? AND Password= ? ");
+$stmt->bind_param('ss', $Username, $hashedpassword);
 $stmt->execute();
-$result = $stmt->get_result();
-
-$row = $result->fetch_assoc();   
-if($row){
+$stmt->bind_result($user);
+  
+if($stmt->fetch()){
     
     $_SESSION["login"]= "true";
     
@@ -34,19 +34,6 @@ if($row){
 else{
     echo "Invalid Credentials.";
 }
- // Form the SQL query (an INSERT query)
-// $sql="INSERT INTO Reservation (Start_Date, End_Date) VALUES ('$_POST[startdate]','$_POST[enddate]')";
-// $ask="SELECT * FROM Rooms WHERE HOTEL_ID=1 AND Type='{$_POST['Type']}'";
 
-//$result = mysqli_query($con,"SELECT * FROM Guest WHERE Email = '$Email'");    
-//    if(!$result) {
-//        die("you suck: " . mysql_error());
-//    }  
-//$row = mysqli_fetch_array($result);
-//    
-//else{
-//    echo "No Guest account exists with this email";
-//     header("Location: costumlogin.php");
-//}
 
 ?> 

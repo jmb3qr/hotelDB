@@ -1,10 +1,9 @@
-  
-    <head>
+<head>
 <!DOCTYPE html>
 <html lang="en">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Biltmore Hotels Home</title>
+        <title>Three Palms Hotel</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="" />
@@ -52,7 +51,15 @@ form {
   z-index: 10;
 }
 
-
+/* CUSTOMIZE THE JUMBOTRON
+-------------------------------------------------- */
+.jumbotron {
+  background-image:url("http://nipunscorp.com/wp-content/uploads/2012/11/hotel4-900x400.jpg");
+            /*900 by 400*/
+  height: 400px;
+background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -107,7 +114,7 @@ form {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 45px 0; /* Space out the Bootstrap <hr> more */
 }
 .featurette {
   padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
@@ -127,10 +134,13 @@ form {
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-size: 50px;
-  font-weight: 300;
+  font-size: 100px;
+  font-weight: 600;
+  font-family: Copperplate Gothic Light;
   line-height: 1;
   letter-spacing: -1px;
+            color: cadetblue;
+            text-shadow: 3px 3px black;
 }
 
 
@@ -167,12 +177,12 @@ form {
 
         </style>
     </head>
-        </style>
-    </head>
-
-<body>
-   
-<div class="navbar-wrapper">
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+        
+        <div class="navbar-wrapper">
   <div class="container">
     <div class="navbar navbar-inverse navbar-static-top">
       
@@ -182,13 +192,23 @@ form {
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </a>
-        <a class="navbar-brand" href="hotelHome.php">Biltmore Hotel</a>
+        <a class="navbar-brand" href="hotelHome.php">Biltmore Hotels</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="employeelogin.php" >Employee</a></li>
-              
-            <li><a href="hotelHome.php#Contact" >Contact Us</a></li>
+            <li><a href="employeelogin.php">Employee</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="hotelnew.php">Charleston</a></li>
+                <li><a href="hotelnew2.php">Charlotesville</a></li>
+                <li><a href="hotelnew3.php">Boston</a></li>
+                <li><a href="hotelnew4.php">Dallas</a></li>
+                <li><a href="hotelnew5.php">Seattle</a></li>
+                <li><a href="hotelnew6.php">Fairfield</a></li>
+              </ul>
+            </li>
+              <li><a href="hotelnew3.php#Contact" >Contact Us</a></li>
           </ul>
         </div>
 
@@ -199,22 +219,7 @@ form {
 
 <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide">
-  <!-- Indicators -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://www.renaissanceasheville.com/images/masthead/biltmore-estate.jpg" style="width:100%" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Biltmore Hotels</h1>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://www.renaissanceasheville.com/images/home-slider/slide01.jpg" class="img-responsive">    
-    </div> 
-  </div>
-</div>
+
 <!-- /.carousel -->
 
 
@@ -225,65 +230,119 @@ form {
 <div class="container marketing">
 
   <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://www.hummerlimoride.com/images/charleston-south-carolina-the-battery.jpg">
-      <h2>Beach Palms</h2>
-      <p>Charelston, South Carolina</p>
-      <p><a class="btn btn-default" href="hotelnew.php">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="https://www.hammondtownsend.com/assets/images/general/monticello.jpg">
-      <h2>Casino Royal</h2>
-      <p>Charlottesville, Virginia</p>
-      <p><a class="btn btn-default" href="hotelnew2.php">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://www.keeganwerlin.com/wp-content/uploads/2014/09/Boston1.jpg">
-      <h2>Three Palms</h2>
-      <p>Boston, Massachusets</p>
-      <p><a class="btn btn-default" href="hotelnew3.php">View details </a></p>
-    </div>
-  </div><!-- /.row -->
-  
-  <p></p>
-   <p></p>
-  
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="https://www.fun-things-texas.com/funthingstexas/wp-content/uploads/dal-hyatt-regency-downtown.jpg">
-      <h2>CourtYard</h2>
-      <p>Dallas, Texas</p>
-      <p><a class="btn btn-default" href="hotelnew4.php">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="http://resizer.otstatic.com/v1/fDzI465IL8%2B687zSupRS4Q/23683442.jpg">
-      <h2>Sleep Inn</h2>
-      <p>Seattle, Washington</p>
-      <p><a class="btn btn-default" href="hotelnew5.php">View details </a></p>
-    </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="https://s-media-cache-ak0.pinimg.com/736x/0c/fa/7c/0cfa7c916fd69bf14fceeb81918fedbc.jpg">
-      <h2>Hartford House</h2>
-      <p>Fairfield Conneticut</p>
-      <p><a class="btn btn-default" href="hotelnew6.php">View details </a></p>
-    </div>
-  </div><!-- /.row -->
 
 
+
+  <!-- START THE FEATURETTES -->
+  <hr class="featurette-divider">
   
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="featurette-heading">Three Palms Hotel</h2>
+      </div>
+    </div>
+
   <hr class="featurette-divider">
 
-  <!-- FOOTER -->
+<!-- Double -->
+<div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="https://s3.amazonaws.com/s3.imagefinder.co/uploads/2015/12/16034925/hiresstock-com-Hotel-Rooms-And-Hotel-Room-Amenities-22-150x150.jpg">
+      <h2>Double</h2>
+      <p>Our most affordable room. Perfect for traveling with kids.</p>
+ 
+      <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
+            
+    </div>
+    
+      
+      
+<!-- KING -->      
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://www.brycecanyongrand.com/wp-content/uploads/2014/12/hotel-room-in-bryce-canyon-150x150.jpg">
+      <h2>King</h2>
+      <p>A more luxurious room. King-size bed and a balcony.</p>
+ 
+      <p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>
+            
+    </div>
+  
+  
+<!-- SUIT -->
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://www.edenresort.com/wp-content/uploads/2014/04/Eden-Resort-Lancaster-PA-Hotel-Two-Room-King-Suite-P0000056-150x150.jpg">
+      <h2>Suite</h2>
+      <p>Our most romantic experience. Ideal for couples.</p>
+      
+<p><button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.open('checkguest.php', 'newwindow', 'width=400, height=500'); return false;" >Reserve</button></p>      
+           
+    </div>
+  </div>
+  
+  <a id="Contact"></a>
+   <br>
+  <br>
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+     
+      <br>
     <a id="Contact"></a>
   <footer>
     <h3><center>Contact Us</center></h3>
+   
     
-  <p><center>Biltmore Hotels	</p>
-    <p>Nashville, NC 32456 </p>
-    <p><u> 1-800-345-9078</u></p>
+    
+  <p><center>Three Palms	</p>
+   <p>Main Street	</p>
+    <p>Boston, MA 49823 </p>
+    <p><u> 630-285-9023</u></p>
   </center>
- 
-  </footer>
+
+    
+    
+    
+    
+    
+
+  <!-- FOOTER -->
 
 </div><!-- /.container -->
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+
+
+        
+        <!-- JavaScript jQuery code from Bootply.com editor  -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            
+        
+        });
+        
+        </script>
+        
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-40413119-1', 'bootply.com');
+          ga('send', 'pageview');
+        </script>
+        
+        
+    </body>
+</html>
