@@ -65,9 +65,9 @@ div {
           <option value="suite">Suite</option>
         </select><br>
         <label for="startdate">Check-in</label><br>
-        <input type="date" id="startdate" name="startdate" min="2016-04-25"><br><br>
+        <input type="date" id="startdate" name="startdate" min="2016-04-27" required pattern = "(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"><br><br>
      <label for="enddate">Check-out</label><br>
-      <input type="date" id="enddate" name="enddate" min="2016-04-26"><br><br> 
+      <input type="date" id="enddate" name="enddate" min="2016-04-28" required pattern = "(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"><br><br> 
     
 <!--
     <label for="startdate">Start Date</label>

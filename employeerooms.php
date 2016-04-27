@@ -21,13 +21,19 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
             $sql="select * from Hotel natural join Rooms where Hotel_ID = 1";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Rooms</h3>";
-            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Vacant</th>\n";
+            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Available</th>\n";
             while($row = $result->fetch_assoc()){
                 $name = $row['Hotel_Name'];
                 $num = $row['Room_Number'];
                 $type = $row['Type'];
                 $vac = $row['Vacant'];
-                echo "<tr><td>$name</td><td>$num</td><td>$type</td><td>$vac</td></tr>";
+		if($vac == "1"){
+			$vac="yes";
+		}
+                if($vac == "0"){
+			$vac="no";
+		}
+		echo "<tr><td>$name</td><td>$num</td><td>$type</td><td>$vac</td></tr>";
             
 
         }
@@ -37,12 +43,18 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
             $sql="select * from Hotel natural join Rooms where Hotel_ID = 2";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Rooms</h3>";
-            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Vacant</th>\n";
+            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Available</th>\n";
             while($row = $result->fetch_assoc()){
                 $name = $row['Hotel_Name'];
                 $num = $row['Room_Number'];
                 $type = $row['Type'];
                 $vac = $row['Vacant'];
+		if($vac == "1"){
+			$vac="yes";
+		}
+                if($vac == "0"){
+			$vac="no";
+		}
                 echo "<tr><td>$name</td><td>$num</td><td>$type</td><td>$vac</td></tr>";
             
 
@@ -53,12 +65,18 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
             $sql="select * from Hotel natural join Rooms where Hotel_ID = 3";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Rooms</h3>";
-            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Vacant</th>\n";
+            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Available</th>\n";
             while($row = $result->fetch_assoc()){
                 $name = $row['Hotel_Name'];
                 $num = $row['Room_Number'];
                 $type = $row['Type'];
                 $vac = $row['Vacant'];
+		if($vac == "1"){
+			$vac="yes";
+		}
+                if($vac == "0"){
+			$vac="no";
+		}
                 echo "<tr><td>$name</td><td>$num</td><td>$type</td><td>$vac</td></tr>";
             
 
@@ -69,12 +87,18 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
             $sql="select * from Hotel natural join Rooms where Hotel_ID = 4";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Rooms</h3>";
-            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Vacant</th>\n";
+            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Available</th>\n";
             while($row = $result->fetch_assoc()){
                 $name = $row['Hotel_Name'];
                 $num = $row['Room_Number'];
                 $type = $row['Type'];
                 $vac = $row['Vacant'];
+		if($vac == "1"){
+			$vac="yes";
+		}
+                if($vac == "0"){
+			$vac="no";
+		}
                 echo "<tr><td>$name</td><td>$num</td><td>$type</td><td>$vac</td></tr>";
             
 
@@ -85,12 +109,18 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
             $sql="select * from Hotel natural join Rooms where Hotel_ID = 5";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Rooms</h3>";
-            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Vacant</th>\n";
+            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Available</th>\n";
             while($row = $result->fetch_assoc()){
                 $name = $row['Hotel_Name'];
                 $num = $row['Room_Number'];
                 $type = $row['Type'];
                 $vac = $row['Vacant'];
+		if($vac == "1"){
+			$vac="yes";
+		}
+                if($vac == "0"){
+			$vac="no";
+		}
                 echo "<tr><td>$name</td><td>$num</td><td>$type</td><td>$vac</td></tr>";
             
 
@@ -101,12 +131,18 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
             $sql="select * from Hotel natural join Rooms where Hotel_ID = 6";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Rooms</h3>";
-            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Vacant</th>\n";
+            echo "<table class=gridtable border=1><th>Hotel</th><th>Room Number</th><th>Type</th><th>Available</th>\n";
             while($row = $result->fetch_assoc()){
                 $name = $row['Hotel_Name'];
                 $num = $row['Room_Number'];
                 $type = $row['Type'];
                 $vac = $row['Vacant'];
+		if($vac == "1"){
+			$vac="yes";
+		}
+                if($vac == "0"){
+			$vac="no";
+		}
                 echo "<tr><td>$name</td><td>$num</td><td>$type</td><td>$vac</td></tr>";
             
 

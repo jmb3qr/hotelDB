@@ -19,19 +19,21 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
         $view = '%' . $_GET['whichtable'] . '%';
         if($view=="%reservation%"){
 //            $sql="select * from Reservation natural join MAKES natural join Guest natural join ASSIGNED natural join Rooms natural join Hotel ORDER BY Reservation_ID";
-            $sql="select * from DisplayReservation";
+            $sql="select * from DisplayReserve";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Reservations</h3>";
-            echo "<table class=gridtable border=1><th>ID</th><th>Last Name</th><th>First Name</th><th>Room</th><th>Check-in</th><th>Check-out</th><th>Location</th>\n";
+            echo "<table class=gridtable border=1><th>ID</th><th>Last Name</th><th>First Name</th><th>Location</th><th>Room</th><th>Check-in</th><th>Check-out</th><th>Type</th><th>Price</th>\n";
             while($row = $result->fetch_assoc()){
                 $id = $row['Reservation_ID'];
                 $lname = $row['Last_Name'];
                 $fname = $row['First_Name'];
                 $num = $row['Room_Number'];
+                $type = $num = $row['Type'];
                 $start = $row['Start_Date'];
+                $price = $row['Price'];
                 $end = $row['End_Date'];
                 $hotel = $row['Hotel_Name'];
-                echo "<tr><td>$id</td><td>$lname</td><td>$fname</td><td>$num</td><td>$start</td><td>$end</td><td>$hotel</td></tr>";
+                echo "<tr><td>$id</td><td>$lname</td><td>$fname</td><td>$hotel</td><td>$num</td><td>$start</td><td>$end</td><td>$type</td><td>$price</td></tr>";
             
 
         }
@@ -71,14 +73,14 @@ $_SESSION["error"] = "You have not logged in. Please log in first";
             echo "</table>";
         }
         if($view=="%bills%"){
-            $sql="select * from DisplayBill";
+            $sql="select * from DisplayBills";
             $result=mysqli_query($con,$sql) or die('Error: ' . mysqli_error($con));
             echo"<h3>Bills</h3>";
             echo "<table class=gridtable border=1><th>Bill No</th><th>Last Name</th><th>First Name</th><th>Amount</th>\n";
             while($row = $result->fetch_assoc()){
                 $lname = $row['Last_Name'];
                 $fname = $row['First_Name'];
-                $billno = $row['Bill_ID'];
+                $billno = $row['BILL_ID'];
                 $amt = $row['Total'];
                 echo "<tr><td>$billno</td><td>$lname</td><td>$fname</td><td>$amt</td></tr>";
             

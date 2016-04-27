@@ -482,11 +482,38 @@ p {
       <option value="employee">Employee Info</option>
     </select>  
 </form>
+    <br>
 </div>
   </div>
         </div>
 
      <center><div id="tableresult"></div></center><br>
+     <div class="col-md-4 text-center">
+<div>
+
+         </div>
+        </div>
+     <div class="col-md-4 text-center">
+    <div class="container">
+<div>
+  
+  <form action="makebill.php" method="post" >
+    
+<label for="bill">Pay Bill</label><br><br>
+    <input type="number" id="amt" name="amt" placeholder="Enter Amount" required>
+    <input type="number" id="guest" name="guest" placeholder="Enter Guest ID" required>
+    <select id="method" name="method" required>
+      <option value="Credit Card">Credit Card</option>
+        <option value="Cash">Cash</option>
+      <option value="Check">Check</option>
+    </select>
+    <input type="submit" name="submit">
+  </form>
+</div>
+  </div>
+        </div>
+
+
         
         
       
@@ -495,5 +522,8 @@ p {
   <hr class="featurette-divider">
 
     </div>
+    <br>
+        
+
 </div><!-- /.container -->
     
